@@ -24,5 +24,21 @@ def profs(typ):
     return render_template("profs.html", professions=professions, typ=typ)
 
 
+@app.route("/answer")
+@app.route("/auto_answer")
+def ans():
+    params = {
+        "title": "Анкета",
+        "surname": "Watny",
+        "name": "Mark",
+        "education": "выше среднего",
+        "profession": "штурман марсохода",
+        "sex": "male",
+        "motivation": "Всегда мечтал застрять на Марсе!",
+        "ready": "True"
+    }
+    return render_template("auto_answer.html", **params )
+
+
 if __name__ == "__main__":
     app.run(host="127.0.0.1", port=8081)

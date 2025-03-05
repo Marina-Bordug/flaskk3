@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+
+{% block content %}
+<link rel="stylesheet" href="./static/css/style.css">
+<h4 class="hh">{{ title }}</h4>
+<p>Фамилия: {{ surname }}</p>
+<p>Имя: {{ name }}</p>
+<p>Образование: {{ education }}</p>
+<p>Профессия: {{ profession }}</p>
+<p>Пол: {{ sex }}</p>
+<p>Мотивация: {{ motivation }}</p>
+<p>Готовы остаться на Марсе? {{ ready }}</p>
+
+{% endblock %}
