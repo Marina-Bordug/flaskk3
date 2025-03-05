@@ -3,9 +3,12 @@
 {% block content %}
 {% if prof == 'инженер' or prof == 'строитель' %}
 <h2 class="d-flex justify-content-center">Инженерные тренажеры</h2>
-
+    <img src="url_for('static', filename='img/rocket.jpg')"
+           alt="здесь должна была быть картинка, но не нашлась">
 {% else %}
     <h2 class="d-flex justify-content-center">Научные симуляторы</h2>
+    <img src="url_for('static', filename='img/rocket.jpg')"
+           alt="здесь должна была быть картинка, но не нашлась">
 {% endif %}
 
 {% endblock %}
