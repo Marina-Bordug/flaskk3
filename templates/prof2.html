@@ -1,0 +1,10 @@
+{% extends "base.html" %}
+
+{% block content %}
+{% if prof == 'инженер' or prof == 'строитель' %}
+<h2 class="d-flex justify-content-center">Инженерные тренажеры</h2>
+{% else %}
+    <h2 class="d-flex justify-content-center">Научные симуляторы</h2>
+{% endif %}
+
+{% endblock %}

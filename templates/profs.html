@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block content %}
+<h2>Список профессий</h2>
+{% if typ == 'ol' %}
+<ol>
+    {% for i in professions %}
+    <li>{{ i }}</li>
+    {% endfor %}
+</ol>
+{% elif typ == 'ul' %}
+<ul>
+    {% for i in professions %}
+    <li>{{ i }}</li>
+    {% endfor %}
+</ul>
+{% else %}
+<div class="alert alert-danger" role="alert">Неверный ввод</div>
+{% endif %}
+
+{% endblock %}
